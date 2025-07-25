@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 import { StockFormData } from './StockForm';
 
@@ -41,7 +42,9 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                         <span style={{ fontWeight: '600', fontSize: 14 }}>23:56</span>
                         <img src="/bell.svg" alt="bell" style={{ width: '14px', height: '14px' }} />
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+                        <img src="/cellular.png" alt="cellular" style={{ width: '14px', height: '14px' }} />
+                        <img src="/cellular.png" alt="cellular" style={{ width: '14px', height: '14px' }} />
                         <img src="/cellular.png" alt="cellular" style={{ width: '14px', height: '14px' }} />
                         <img src="/wifi.svg" alt="wifi" style={{ width: '14px', height: '14px' }} />
                         <img src="/empty-battery.png" alt="battery" style={{ width: '14px', height: '14px' }} />
@@ -70,44 +73,98 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                 {/* Account Tabs */}
                 <div style={{
                     display: 'flex',
-                    padding: '8px 16px',
-                    gap: 8,
+                    padding: '12px 16px',
+                    gap: 32,
                     borderBottom: '1px solid #f0f0f0',
                     background: '#fff',
                 }}>
                     <div style={{
-                        padding: '6px 12px',
-                        borderRadius: 16,
-                        fontSize: 11,
-                        background: '#f8f9fa',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 6,
+                        padding: '4px 0',
+                        fontSize: 13,
                         color: '#666',
                         fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                         fontWeight: '500',
                     }}>
-                        Tài khoản 1
+                        <div style={{
+                            width: '20px',
+                            height: '20px',
+                            borderRadius: '50%',
+                            background: '#666',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            fontSize: 11,
+                            color: '#fff',
+                            fontWeight: '600',
+                        }}>
+                            1
+                        </div>
+                        <span>Tài khoản</span>
                     </div>
                     <div style={{
-                        padding: '6px 12px',
-                        borderRadius: 16,
-                        fontSize: 11,
-                        background: '#f8f9fa',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 6,
+                        padding: '4px 0',
+                        fontSize: 13,
                         color: '#666',
                         fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                         fontWeight: '500',
                     }}>
-                        Tài khoản 3
+                        <div style={{
+                            width: '20px',
+                            height: '20px',
+                            borderRadius: '50%',
+                            background: '#666',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            fontSize: 11,
+                            color: '#fff',
+                            fontWeight: '600',
+                        }}>
+                            3
+                        </div>
+                        <span>Tài khoản</span>
                     </div>
                     <div style={{
-                        padding: '6px 12px',
-                        borderRadius: 16,
-                        fontSize: 11,
-                        background: '#6366f1',
-                        color: '#fff',
-                        borderBottom: '2px solid #6366f1',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: 6,
+                        padding: '4px 0',
+                        fontSize: 13,
+                        color: '#000',
                         fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                         fontWeight: '600',
+                        position: 'relative',
                     }}>
-                        Tài khoản 6
+                        <div style={{
+                            width: '20px',
+                            height: '20px',
+                            borderRadius: '50%',
+                            background: '#6366f1',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            fontSize: 11,
+                            color: '#fff',
+                            fontWeight: '600',
+                        }}>
+                            6
+                        </div>
+                        <span>Tài khoản</span>
+                        <div style={{
+                            position: 'absolute',
+                            bottom: '-12px',
+                            left: '0',
+                            width: '100%',
+                            height: '2px',
+                            background: '#6366f1',
+                            borderRadius: '1px',
+                        }} />
                     </div>
                 </div>
 
