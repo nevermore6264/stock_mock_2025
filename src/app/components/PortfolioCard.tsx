@@ -8,8 +8,8 @@ interface PortfolioCardProps {
 const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
     return (
         <div style={{
-            width: '375px', // iPhone width
-            height: '812px', // iPhone height
+            width: '361px', // iPhone 16 screen width
+            height: '820px', // iPhone 16 screen height
             background: '#fff',
             display: 'flex',
             flexDirection: 'column',
@@ -17,10 +17,6 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
             fontSize: 12,
             color: '#333',
             overflow: 'hidden', // Prevent body scroll
-            border: '1px solid #e5e7eb',
-            borderRadius: '20px',
-            boxShadow: '0 10px 25px rgba(0, 0, 0, 0.1)',
-            margin: '20px auto',
         }}>
             {/* Fixed Header Section */}
             <div style={{
@@ -787,6 +783,21 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                             fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                         }}>Tất cả</span>
                     </div>
+                </div>
+
+                {/* Home Indicator */}
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    padding: '8px 0 4px 0',
+                    background: '#fff',
+                }}>
+                    <div style={{
+                        width: '134px',
+                        height: '5px',
+                        background: '#000',
+                        borderRadius: '3px',
+                    }} />
                 </div>
             </div>
         </div>

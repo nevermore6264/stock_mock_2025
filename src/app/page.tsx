@@ -43,9 +43,22 @@ export default function Home() {
   };
 
   return (
-    <>
+    <div style={{
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      background: 'linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%)'
+    }}>
       <Header />
-      <div style={{ minHeight: '100vh', width: '100vw', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', background: 'linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%)' }}>
+      <div style={{
+        flex: 1,
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        padding: '20px 0'
+      }}>
         <div style={{ display: 'flex', gap: 32, alignItems: 'flex-start' }}>
           {/* Left Column - Form */}
           <StockForm onSubmit={handleFormSubmit} />
@@ -126,6 +139,6 @@ export default function Home() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
