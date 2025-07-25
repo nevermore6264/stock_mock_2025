@@ -6,7 +6,7 @@ interface PortfolioCardProps {
     data: StockFormData;
 }
 
-const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
+const PortfolioCard: React.FC<PortfolioCardProps> = ({ }) => {
     return (
         <div style={{
             width: '361px', // iPhone 16 screen width
@@ -182,19 +182,8 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                         fontWeight: '600',
                         color: '#333',
                         fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-                        position: 'relative',
                     }}>
                         Danh mục nắm giữ
-                        <div style={{
-                            position: 'absolute',
-                            bottom: '-8px',
-                            left: '50%',
-                            transform: 'translateX(-50%)',
-                            width: '133px',
-                            height: '2px',
-                            background: '#6366f1',
-                            borderRadius: '1px',
-                        }} />
                     </div>
                     <div style={{
                         padding: '8px 0',
