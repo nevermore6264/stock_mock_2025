@@ -73,10 +73,11 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                 {/* Account Tabs */}
                 <div style={{
                     display: 'flex',
-                    padding: '12px 16px',
+                    padding: '12px 0px',
                     gap: 32,
                     borderBottom: '1px solid #f0f0f0',
                     background: '#fff',
+                    justifyContent: 'center',
                 }}>
                     <div style={{
                         display: 'flex',
@@ -160,7 +161,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                             position: 'absolute',
                             bottom: '-12px',
                             left: '0',
-                            width: '100%',
+                            width: '100vw',
                             height: '2px',
                             background: '#6366f1',
                             borderRadius: '1px',
