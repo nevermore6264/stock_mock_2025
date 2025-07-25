@@ -31,20 +31,20 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                     justifyContent: 'space-between',
                     alignItems: 'center',
                     padding: '4px 16px',
-                    background: '#000',
-                    color: '#fff',
-                    fontSize: 10,
-                    height: 20,
+                    background: '#fff',
+                    color: '#000',
+                    fontSize: 12,
+                    height: 24,
                     fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                        <span>23:56</span>
-                        <span>🔔</span>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                        <span style={{ fontWeight: '600', fontSize: 14 }}>23:56</span>
+                        <img src="/bell.svg" alt="bell" style={{ width: '14px', height: '14px' }} />
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                        <span>📶</span>
-                        <span>📶</span>
-                        <span>🔋 49</span>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+                        <img src="/cellular.png" alt="cellular" style={{ width: '14px', height: '14px' }} />
+                        <img src="/wifi.svg" alt="wifi" style={{ width: '14px', height: '14px' }} />
+                        <img src="/empty-battery.png" alt="battery" style={{ width: '14px', height: '14px' }} />
                     </div>
                 </div>
 
@@ -53,13 +53,18 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
-                    padding: '12px 16px',
+                    padding: '16px',
                     borderBottom: '1px solid #f0f0f0',
                     background: '#fff',
                 }}>
-                    <span>←</span>
-                    <span style={{ fontWeight: '600', fontSize: 16, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Cổ phiếu</span>
-                    <span>🔍</span>
+                    <img src="/back.png" alt="back" style={{ width: '20px', height: '20px' }} />
+                    <span style={{
+                        fontWeight: '700',
+                        fontSize: 20,
+                        color: '#000',
+                        fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
+                    }}>Cổ phiếu</span>
+                    <img src="/search.png" alt="search" style={{ width: '20px', height: '20px' }} />
                 </div>
 
                 {/* Account Tabs */}
