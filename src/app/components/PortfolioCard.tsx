@@ -43,11 +43,9 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                         <img src="/bell.svg" alt="bell" style={{ width: '14px', height: '14px' }} />
                     </div>
                     <div style={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-                        <img src="/cellular.png" alt="cellular" style={{ width: '14px', height: '14px' }} />
-                        <img src="/cellular.png" alt="cellular" style={{ width: '14px', height: '14px' }} />
-                        <img src="/cellular.png" alt="cellular" style={{ width: '14px', height: '14px' }} />
-                        <img src="/wifi.svg" alt="wifi" style={{ width: '14px', height: '14px' }} />
-                        <img src="/empty-battery.png" alt="battery" style={{ width: '14px', height: '14px' }} />
+                        <img src="/cellular.png" alt="cellular" style={{ width: '14px', height: '14px', marginRight: '10px' }} />
+                        <img src="/wifi.svg" alt="wifi" style={{ width: '14px', height: '14px', marginRight: '10px' }} />
+                        <img src="/empty-battery.png" alt="battery" style={{ width: '14px', height: '14px', marginRight: '10px' }} />
                     </div>
                 </div>
 
@@ -89,6 +87,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                         fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                         fontWeight: '500',
                     }}>
+                        <span>Tài khoản</span>
                         <div style={{
                             width: '20px',
                             height: '20px',
@@ -103,7 +102,6 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                         }}>
                             1
                         </div>
-                        <span>Tài khoản</span>
                     </div>
                     <div style={{
                         display: 'flex',
@@ -115,6 +113,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                         fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
                         fontWeight: '500',
                     }}>
+                        <span>Tài khoản</span>
                         <div style={{
                             width: '20px',
                             height: '20px',
@@ -129,7 +128,6 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                         }}>
                             3
                         </div>
-                        <span>Tài khoản</span>
                     </div>
                     <div style={{
                         display: 'flex',
@@ -142,6 +140,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                         fontWeight: '600',
                         position: 'relative',
                     }}>
+                        <span>Tài khoản</span>
                         <div style={{
                             width: '20px',
                             height: '20px',
@@ -156,12 +155,12 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                         }}>
                             6
                         </div>
-                        <span>Tài khoản</span>
                         <div style={{
                             position: 'absolute',
                             bottom: '-12px',
-                            left: '0',
-                            width: '100vw',
+                            left: '50%',
+                            transform: 'translateX(-50%)',
+                            width: '133px',
                             height: '2px',
                             background: '#6366f1',
                             borderRadius: '1px',
@@ -182,10 +181,20 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ data }) => {
                         fontSize: 13,
                         fontWeight: '600',
                         color: '#333',
-                        borderBottom: '2px solid #6366f1',
                         fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                        position: 'relative',
                     }}>
                         Danh mục nắm giữ
+                        <div style={{
+                            position: 'absolute',
+                            bottom: '-8px',
+                            left: '50%',
+                            transform: 'translateX(-50%)',
+                            width: '133px',
+                            height: '2px',
+                            background: '#6366f1',
+                            borderRadius: '1px',
+                        }} />
                     </div>
                     <div style={{
                         padding: '8px 0',
