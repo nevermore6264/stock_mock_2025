@@ -3,6 +3,7 @@
 import React, { useRef, useState } from 'react';
 import StockForm, { StockFormData } from './components/StockForm';
 import StockCard from './components/StockCard';
+import PortfolioCard from './components/PortfolioCard';
 import Iphone16Mockup from './components/Iphone16Mockup';
 import html2canvas from 'html2canvas';
 import Header from './components/Header';
@@ -10,6 +11,7 @@ import Footer from './components/Footer';
 
 export default function Home() {
   const [stockData, setStockData] = useState<StockFormData | null>(null);
+  const [showPortfolio, setShowPortfolio] = useState(false);
   const screenRef = useRef<HTMLDivElement>(null);
   const [imgUrl, setImgUrl] = useState<string | null>(null);
 
@@ -52,9 +54,55 @@ export default function Home() {
 
           {/* Center Column - Mockup */}
           <div>
+            {/* Toggle Switch */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 12,
+              marginBottom: 16,
+              padding: '12px 16px',
+              background: 'rgba(255, 255, 255, 0.8)',
+              borderRadius: 12,
+              backdropFilter: 'blur(10px)',
+              border: '1px solid rgba(255, 255, 255, 0.2)',
+            }}>
+              <span style={{ fontSize: 14, fontWeight: 600, color: '#374151' }}>
+                {showPortfolio ? 'Portfolio View' : 'Stock Detail View'}
+              </span>
+              <button
+                onClick={() => setShowPortfolio(!showPortfolio)}
+                style={{
+                  position: 'relative',
+                  width: 48,
+                  height: 24,
+                  background: showPortfolio ? '#6366f1' : '#d1d5db',
+                  borderRadius: 12,
+                  border: 'none',
+                  cursor: 'pointer',
+                  transition: 'background 0.3s ease',
+                }}
+              >
+                <div style={{
+                  position: 'absolute',
+                  top: 2,
+                  left: showPortfolio ? 26 : 2,
+                  width: 20,
+                  height: 20,
+                  background: '#fff',
+                  borderRadius: '50%',
+                  transition: 'left 0.3s ease',
+                  boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
+                }} />
+              </button>
+            </div>
+
             <Iphone16Mockup>
               <div ref={screenRef} style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <StockCard data={stockData || placeholderData} />
+                {showPortfolio ? (
+                  <PortfolioCard data={stockData || placeholderData} />
+                ) : (
+                  <StockCard data={stockData || placeholderData} />
+                )}
               </div>
             </Iphone16Mockup>
           </div>
@@ -93,7 +141,7 @@ export default function Home() {
                 <img src={imgUrl} alt="Mockup" style={{ width: 180, border: '1px solid #ccc', borderRadius: 12, boxShadow: '0 4px 12px rgba(0,0,0,0.1)' }} />
                 <a
                   href={imgUrl}
-                  download="mockup-iphone16.png"
+                  download={`mockup-iphone16-${showPortfolio ? 'portfolio' : 'stock'}.png`}
                   style={{
                     display: 'inline-block',
                     background: 'linear-gradient(90deg, #6366f1 0%, #60a5fa 100%)',
