@@ -328,38 +328,61 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ }) => {
 
                     {/* HSG Details */}
                     <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: '1fr 1fr',
-                        gap: 8,
+                        background: '#f8f9fa',
+                        borderRadius: 8,
+                        padding: 12,
                         marginBottom: 12,
                         fontSize: 11,
                     }}>
-                        <div>
-                            <div style={{ color: '#666', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Tổng vốn</div>
-                            <div style={{ fontWeight: '600', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>585,344,000</div>
+                        <div style={{
+                            display: 'grid',
+                            gridTemplateColumns: '1fr 1fr',
+                            gap: 8,
+                            marginBottom: 8,
+                        }}>
+                            <div>
+                                <div style={{ color: '#666', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Tổng vốn</div>
+                                <div style={{ fontWeight: '600', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>585,344,000</div>
+                            </div>
+                            <div>
+                                <div style={{ color: '#666', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Giá trị thị trường</div>
+                                <div style={{ fontWeight: '600', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>574,400,000</div>
+                            </div>
                         </div>
                         <div>
-                            <div style={{ color: '#666', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Giá trị thị trường</div>
-                            <div style={{ fontWeight: '600', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>574,400,000</div>
-                        </div>
-                        <div style={{ gridColumn: '1 / -1' }}>
                             <div style={{ color: '#666', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Lãi / Lỗ</div>
                             <div style={{ fontWeight: '600', color: '#ef4444', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>-10,944,000</div>
                         </div>
                     </div>
 
                     {/* Volume Details for HSG */}
-                    <div style={{ marginBottom: 16 }}>
-                        <div style={{ fontSize: 11, fontWeight: '600', marginBottom: 8, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Tổng KL: 32,000</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL thường: 0</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL FS: 0</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL có thể bán: 0</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 8, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Outroom: 0</div>
-
-                        <div style={{ fontSize: 11, fontWeight: '600', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL mua chờ về:</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 2, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL T0: 0</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 2, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL T1: 0</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 12, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL T2: 32,000</div>
+                    <div style={{
+                        background: '#f8f9fa',
+                        borderRadius: 8,
+                        padding: 12,
+                        marginBottom: 16,
+                    }}>
+                        <div style={{
+                            display: 'grid',
+                            gridTemplateColumns: '1fr 1fr',
+                            gap: 12,
+                        }}>
+                            <div>
+                                <div style={{ fontSize: 11, fontWeight: '600', marginBottom: 8, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Tổng KL: 32,000</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL thường: 0</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL FS: 0</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL có thể bán: 0</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 8, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Outroom: 0</div>
+                            </div>
+                            <div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL khác: 0 ℹ️</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 8, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>CPCT/Thưởng: 0</div>
+                                <div style={{ fontSize: 11, fontWeight: '600', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL mua chờ về:</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 2, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL T0: 0</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 2, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL T1: 0</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 2, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL T2: 32,000</div>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Action Buttons */}
@@ -372,12 +395,16 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ }) => {
                             background: 'transparent',
                             color: '#10b981',
                             border: '1px solid #10b981',
-                            borderRadius: 6,
-                            padding: '8px',
-                            fontSize: 11,
+                            borderRadius: 8,
+                            padding: '10px 8px',
+                            fontSize: 12,
                             fontWeight: '600',
                             cursor: 'pointer',
                             fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                            minHeight: '36px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
                         }}>
                             Mua
                         </button>
@@ -386,12 +413,16 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ }) => {
                             background: 'transparent',
                             color: '#ef4444',
                             border: '1px solid #ef4444',
-                            borderRadius: 6,
-                            padding: '8px',
-                            fontSize: 11,
+                            borderRadius: 8,
+                            padding: '10px 8px',
+                            fontSize: 12,
                             fontWeight: '600',
                             cursor: 'pointer',
                             fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                            minHeight: '36px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
                         }}>
                             Bán
                         </button>
@@ -400,12 +431,16 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ }) => {
                             background: 'transparent',
                             color: '#6b7280',
                             border: '1px solid #6b7280',
-                            borderRadius: 6,
-                            padding: '8px',
-                            fontSize: 11,
+                            borderRadius: 8,
+                            padding: '10px 8px',
+                            fontSize: 12,
                             fontWeight: '600',
                             cursor: 'pointer',
                             fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                            minHeight: '36px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
                         }}>
                             Thông tin mã
                         </button>
@@ -436,38 +471,61 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ }) => {
 
                     {/* HAG Details */}
                     <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: '1fr 1fr',
-                        gap: 8,
+                        background: '#f8f9fa',
+                        borderRadius: 8,
+                        padding: 12,
                         marginBottom: 12,
                         fontSize: 11,
                     }}>
-                        <div>
-                            <div style={{ color: '#666', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Tổng vốn</div>
-                            <div style={{ fontWeight: '600', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>147,336,800</div>
+                        <div style={{
+                            display: 'grid',
+                            gridTemplateColumns: '1fr 1fr',
+                            gap: 8,
+                            marginBottom: 8,
+                        }}>
+                            <div>
+                                <div style={{ color: '#666', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Tổng vốn</div>
+                                <div style={{ fontWeight: '600', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>147,336,800</div>
+                            </div>
+                            <div>
+                                <div style={{ color: '#666', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Giá trị thị trường</div>
+                                <div style={{ fontWeight: '600', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>154,440,000</div>
+                            </div>
                         </div>
                         <div>
-                            <div style={{ color: '#666', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Giá trị thị trường</div>
-                            <div style={{ fontWeight: '600', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>154,440,000</div>
-                        </div>
-                        <div style={{ gridColumn: '1 / -1' }}>
                             <div style={{ color: '#666', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Lãi / Lỗ</div>
                             <div style={{ fontWeight: '600', color: '#10b981', fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>+7,103,200</div>
                         </div>
                     </div>
 
                     {/* Volume Details for HAG */}
-                    <div style={{ marginBottom: 16 }}>
-                        <div style={{ fontSize: 11, fontWeight: '600', marginBottom: 8, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Tổng KL: 10,400</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL thường: 0</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL FS: 0</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL có thể bán: 0</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 8, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Outroom: 10,400</div>
-
-                        <div style={{ fontSize: 11, fontWeight: '600', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL mua chờ về:</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 2, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL T0: 0</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 2, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL T1: 10,400</div>
-                        <div style={{ fontSize: 10, color: '#666', marginBottom: 12, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL T2: 0</div>
+                    <div style={{
+                        background: '#f8f9fa',
+                        borderRadius: 8,
+                        padding: 12,
+                        marginBottom: 16,
+                    }}>
+                        <div style={{
+                            display: 'grid',
+                            gridTemplateColumns: '1fr 1fr',
+                            gap: 12,
+                        }}>
+                            <div>
+                                <div style={{ fontSize: 11, fontWeight: '600', marginBottom: 8, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Tổng KL: 10,400</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL thường: 0</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL FS: 0</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL có thể bán: 0</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 8, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>Outroom: 10,400</div>
+                            </div>
+                            <div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL khác: 0 ℹ️</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 8, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>CPCT/Thưởng: 0</div>
+                                <div style={{ fontSize: 11, fontWeight: '600', marginBottom: 4, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL mua chờ về:</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 2, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL T0: 0</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 2, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL T1: 10,400</div>
+                                <div style={{ fontSize: 10, color: '#666', marginBottom: 2, fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif' }}>KL T2: 0</div>
+                            </div>
+                        </div>
                     </div>
 
                     {/* Action Buttons */}
@@ -480,12 +538,16 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ }) => {
                             background: 'transparent',
                             color: '#10b981',
                             border: '1px solid #10b981',
-                            borderRadius: 6,
-                            padding: '8px',
-                            fontSize: 11,
+                            borderRadius: 8,
+                            padding: '10px 8px',
+                            fontSize: 12,
                             fontWeight: '600',
                             cursor: 'pointer',
                             fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                            minHeight: '36px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
                         }}>
                             Mua
                         </button>
@@ -494,12 +556,16 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ }) => {
                             background: 'transparent',
                             color: '#ef4444',
                             border: '1px solid #ef4444',
-                            borderRadius: 6,
-                            padding: '8px',
-                            fontSize: 11,
+                            borderRadius: 8,
+                            padding: '10px 8px',
+                            fontSize: 12,
                             fontWeight: '600',
                             cursor: 'pointer',
                             fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                            minHeight: '36px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
                         }}>
                             Bán
                         </button>
@@ -508,12 +574,16 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ }) => {
                             background: 'transparent',
                             color: '#6b7280',
                             border: '1px solid #6b7280',
-                            borderRadius: 6,
-                            padding: '8px',
-                            fontSize: 11,
+                            borderRadius: 8,
+                            padding: '10px 8px',
+                            fontSize: 12,
                             fontWeight: '600',
                             cursor: 'pointer',
                             fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                            minHeight: '36px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
                         }}>
                             Thông tin mã
                         </button>
@@ -532,12 +602,18 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ }) => {
                         background: '#10b981',
                         color: '#fff',
                         border: 'none',
-                        borderRadius: 8,
-                        padding: '12px',
-                        fontSize: 14,
-                        fontWeight: '600',
+                        borderRadius: '30px',
+                        padding: '16px 24px',
+                        fontSize: 16,
+                        fontWeight: '700',
                         cursor: 'pointer',
                         fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                        textTransform: 'uppercase',
+                        boxShadow: '0 2px 8px rgba(16, 185, 129, 0.3)',
+                        minHeight: '48px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                     }}>
                         MUA
                     </button>
@@ -546,12 +622,18 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({ }) => {
                         background: '#ef4444',
                         color: '#fff',
                         border: 'none',
-                        borderRadius: 8,
-                        padding: '12px',
-                        fontSize: 14,
-                        fontWeight: '600',
+                        borderRadius: '30px',
+                        padding: '16px 24px',
+                        fontSize: 16,
+                        fontWeight: '700',
                         cursor: 'pointer',
                         fontFamily: 'SF Pro Display, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+                        textTransform: 'uppercase',
+                        boxShadow: '0 2px 8px rgba(239, 68, 68, 0.3)',
+                        minHeight: '48px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
                     }}>
                         BÁN
                     </button>

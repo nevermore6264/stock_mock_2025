@@ -58,7 +58,6 @@ export default function Home() {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        padding: '20px 0'
       }}>
         <div style={{ display: 'flex', gap: 32, alignItems: 'flex-start' }}>
           {/* Left Column - Form */}
